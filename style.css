@@ -1,0 +1,133 @@
+@font-face{
+    font-family: outfit;
+    src:url(/assets/fonts/outfit/static/Outfit-Regular.ttf);
+}
+@font-face{
+    font-family: youngserif;
+    src:url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    font-size: 11px;
+    font-family: outfit;
+    color: hsl(30, 10%, 34%);
+}
+
+.container{
+    display: inline-block;
+    min-width: 265px;
+    max-width: 800px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    line-height: 1rem;
+}
+
+img{
+    border-radius: 5px;
+}
+
+.time{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 5px;
+    line-height: 20px;
+    margin-top: 13px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.time ul{
+    padding-left: 35px;
+}
+
+.time ul li::marker{
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients ul{
+    padding-left: 15px;
+}
+
+.ingredients ul li::marker{
+    color: hsl(14, 45%, 45%);
+}
+
+.instructions ol{
+    padding-left: 15px;
+}
+
+h1{
+    color: hsl(24, 5%, 18%);
+    font-family: 'youngserif';
+    font-size: 25px;
+}
+
+h2{
+    color: hsl(332, 51%, 32%);
+    padding-left: 12px;
+}
+
+h3{
+    color: hsl(14, 45%, 45%);
+    font-family: 'youngserif';
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+.ingredients{
+    border-bottom: 0.5px solid hsl(15, 40%, 84%);
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.instructions{
+    line-height: 20px;
+    padding-right: 10px;
+}
+
+.instructions ol li::marker{
+    color: hsl(14, 45%, 45%);
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+tr,td{
+    border-bottom: 0.5px solid hsl(15, 25%, 94%);
+    padding-left: 20px;
+}
+
+.nutrition tr td:last-child{
+    color: hsl(14, 45%, 45%);
+}
+
+.nutrition table{
+    line-height: 25px;
+}
+
+.details:last-child{
+    border-bottom: 0;
+}
+
+@media (max-width: 545px) {
+    img{
+        border-radius: 0;
+    }
+    .container{
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+    .description{
+        padding: 15px;
+    }
+}
